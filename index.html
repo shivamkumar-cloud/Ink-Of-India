@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink Of India - Discover & Share Indian Literature</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>Ink Of India</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#discover">Discover</a></li>
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#upload">Upload</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#login" class="btn-login">Login</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover the World of Indian Literature</h1>
+                <p>Join thousands of readers and authors in India's largest digital library of novels. Read, share, and connect with your favorite Indian writers.</p>
+                <div class="hero-buttons">
+                    <a href="#discover" class="btn-primary">Explore Novels</a>
+                    <a href="#upload" class="btn-secondary">Start Writing</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Indian Literature">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container stats-container">
+            <div class="stat-item">
+                <h3>5000+</h3>
+                <p>Novels Available</p>
+            </div>
+            <div class="stat-item">
+                <h3>1200+</h3>
+                <p>Indian Authors</p>
+            </div>
+            <div class="stat-item">
+                <h3>85,000+</h3>
+                <p>Active Readers</p>
+            </div>
+            <div class="stat-item">
+                <h3>25+</h3>
+                <p>Languages</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discover Section -->
+    <section class="discover" id="discover">
+        <div class="container">
+            <h2 class="section-title">Discover Indian Novels</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hindi">Hindi</button>
+                <button class="filter-btn" data-filter="english">English</button>
+                <button class="filter-btn" data-filter="bengali">Bengali</button>
+                <button class="filter-btn" data-filter="tamil">Tamil</button>
+                <button class="filter-btn" data-filter="malayalam">Malayalam</button>
+                <button class="filter-btn" data-filter="best">Bestsellers</button>
+            </div>
+            <div class="novels-grid" id="novels-container">
+                <!-- Novels will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Authors -->
+    <section class="authors" id="authors">
+        <div class="container">
+            <h2 class="section-title">Featured Indian Authors</h2>
+            <div class="authors-slider">
+                <div class="author-card">
+                    <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Author">
+                    <h3>Arundhati Roy</h3>
+                    <p>English Literature</p>
+                    <div class="author-books">12 Novels</div>
+                </div>
+                <div class="author-card">
+                    <img src="https://images.unsplash.com/photo-1551836026-d5c2c5af78e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Author">
+                    <h3>Premchand</h3>
+                    <p>Hindi Literature</p>
+                    <div class="author-books">25+ Novels</div>
+                </div>
+                <div class="author-card">
+                    <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-1.2.1&auto=format&fit=crop&w-300&q=80" alt="Author">
+                    <h3>Rabindranath Tagore</h3>
+                    <p>Bengali Literature</p>
+                    <div class="author-books">50+ Novels</div>
+                </div>
+                <div class="author-card">
+                    <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Author">
+                    <h3>Chetan Bhagat</h3>
+                    <p>Contemporary Fiction</p>
+                    <div class="author-books">9 Novels</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload" id="upload">
+        <div class="container">
+            <div class="upload-container">
+                <div class="upload-content">
+                    <h2 class="section-title">Share Your Story With The World</h2>
+                    <p>Join our community of Indian authors. Upload your novels directly to our platform and reach thousands of readers.</p>
+                    <ul class="upload-features">
+                        <li><i class="fas fa-check-circle"></i> Easy-to-use upload system</li>
+                        <li><i class="fas fa-check-circle"></i> Track readership analytics</li>
+                        <li><i class="fas fa-check-circle"></i> Connect with readers</li>
+                        <li><i class="fas fa-check-circle"></i> Monetization options</li>
+                    </ul>
+                    <button class="btn-primary" id="uploadBtn">Upload Your Novel</button>
+                </div>
+                <div class="upload-form" id="uploadForm">
+                    <h3>Upload Your Novel</h3>
+                    <form id="novelUploadForm">
+                        <div class="form-group">
+                            <label for="novelTitle">Novel Title</label>
+                            <input type="text" id="novelTitle" placeholder="Enter novel title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="authorName">Author Name</label>
+                            <input type="text" id="authorName" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="language">Language</label>
+                            <select id="language" required>
+                                <option value="">Select Language</option>
+                                <option value="hindi">Hindi</option>
+                                <option value="english">English</option>
+                                <option value="bengali">Bengali</option>
+                                <option value="tamil">Tamil</option>
+                                <option value="malayalam">Malayalam</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="genre">Genre</label>
+                            <select id="genre" required>
+                                <option value="">Select Genre</option>
+                                <option value="fiction">Fiction</option>
+                                <option value="romance">Romance</option>
+                                <option value="mystery">Mystery</option>
+                                <option value="historical">Historical</option>
+                                <option value="biography">Biography</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" rows="3" placeholder="Brief description of your novel" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="fileUpload">Upload File (PDF/DOC)</label>
+                            <input type="file" id="fileUpload" accept=".pdf,.doc,.docx">
+                        </div>
+                        <button type="submit" class="btn-primary">Submit Novel</button>
+                        <button type="button" class="btn-secondary" id="cancelUpload">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to IndianNovelsHub</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+                <p class="signup-link">Don't have an account? <a href="#" id="signupLink">Sign up here</a></p>
+            </form>
+            <form id="signupForm" class="hidden">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="userType">I am a:</label>
+                    <select id="userType">
+                        <option value="reader">Reader</option>
+                        <option value="author">Author</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Create Account</button>
+                <p class="signup-link">Already have an account? <a href="#" id="loginLink">Login here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Community Section -->
+    <section class="community" id="community">
+        <div class="container">
+            <h2 class="section-title">Join Our Reading Community</h2>
+            <div class="community-features">
+                <div class="feature-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Discussion Forums</h3>
+                    <p>Join conversations about your favorite novels with fellow readers.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Rate & Review</h3>
+                    <p>Share your thoughts and rate novels to help others discover great reads.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Author Events</h3>
+                    <p>Participate in live sessions and virtual book launches with authors.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bookmark"></i>
+                    <h3>Personal Library</h3>
+                    <p>Save your favorite novels and track your reading progress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ink Of India</h3>
+                    <p>Connecting Indian authors with readers worldwide since 2026.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#discover">Discover</a></li>
+                        <li><a href="#authors">Authors</a></li>
+                        <li><a href="#upload">Upload</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Languages</h4>
+                    <ul>
+                        <li><a href="#">Hindi</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Bengali</a></li>
+                        <li><a href="#">Tamil</a></li>
+                        <li><a href="#">Malayalam</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> feedback@inkofindia.com</p>
+                    <p><i class="fas fa-phone"></i> +91 9310107340</p>
+                    <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ink Of India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
